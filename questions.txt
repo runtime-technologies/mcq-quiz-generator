@@ -1,0 +1,375 @@
+[
+    {
+        "answer": "work",
+        "question": "His __________ is also known for its influence on the philosophy of science.",
+        "similar_words": [
+            "acting",
+            "aid",
+            "attempt",
+            "behavior",
+            "behavior",
+            "burst",
+            "buzz",
+            "calibration"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "general public",
+        "question": "He is best known to the __________ __________ for his mass\u2013energy equivalence formula E = mc2, which has been dubbed \"the world's most famous equation\".",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "discovery",
+        "question": "He received the 1921 Nobel Prize in Physics \"for his services to theoretical physics, and especially for his __________ of the law of the photoelectric effect\", a pivotal step in the development of quantum theory.",
+        "similar_words": [
+            "acquiring",
+            "action",
+            "activity",
+            "assumption",
+            "causing",
+            "communication",
+            "delivery",
+            "departure"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "son",
+        "question": "The __________ of a salesman who later operated an electrochemical factory, Einstein was born in the German Empire, but moved to Switzerland in 1895, forsaking his German citizenship the following year.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "teaching diploma",
+        "question": "Specializing in physics and mathematics, he received his academic __________ __________ from the Swiss Federal Polytechnic School in Z\u00fcrich in 1900.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "year",
+        "question": "The following __________, he acquired Swiss citizenship, which he kept for his entire life.",
+        "similar_words": [
+            "air alert",
+            "bimester",
+            "bimillennium",
+            "bout",
+            "bronze age",
+            "calendar day",
+            "calendar month",
+            "century"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "work",
+        "question": "After initially struggling to find __________, from 1902 to 1909 he was employed as a patent examiner at the Swiss Patent Office in Bern.",
+        "similar_words": [
+            "acting",
+            "aid",
+            "attempt",
+            "behavior",
+            "behavior",
+            "burst",
+            "buzz",
+            "calibration"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "beginning",
+        "question": "Near the __________ of his career, Einstein thought that the laws of classical mechanics could no longer be reconciled with those of the electromagnetic field.",
+        "similar_words": [
+            "accident",
+            "accompaniment",
+            "appearance",
+            "avalanche",
+            "boom",
+            "case",
+            "change",
+            "collapse"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "special theory",
+        "question": "This led him to develop his __________ __________ of relativity during his time as a patent clerk.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "annus mirabilis",
+        "question": "In 1905, called his __________ __________ ('miracle year'), he published four groundbreaking papers which attracted the attention of the academic world; the first paper outlined the theory of the photoelectric effect, the second explained Brownian motion, the third introduced special relativity, and the fourth mass\u2013energy equivalence.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "year",
+        "question": "That __________, at the age of 26, he was awarded a PhD by the University of Zurich.",
+        "similar_words": [
+            "air alert",
+            "bimester",
+            "bimillennium",
+            "bout",
+            "bronze age",
+            "calendar day",
+            "calendar month",
+            "century"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "skepticism",
+        "question": "Although initially treated with __________ from many in the scientific community, Einstein's works gradually came to be recognised as significant advancements.",
+        "similar_words": [
+            "incredulity",
+            "indecision",
+            "mental reservation",
+            "misgiving",
+            "peradventure",
+            "suspense"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "year",
+        "question": "He was invited to teach theoretical physics at the University of Bern in 1908 and the following __________ moved to the University of Zurich, then in 1911 to Charles University in Prague before returning to ETH (the newly renamed Federal Polytechnic School) in Z\u00fcrich in 1912.",
+        "similar_words": [
+            "air alert",
+            "bimester",
+            "bimillennium",
+            "bout",
+            "bronze age",
+            "calendar day",
+            "calendar month",
+            "century"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "quantum theory",
+        "question": "He continued to deal with problems of statistical mechanics and __________ __________, which led to his explanations of particle theory and the motion of molecules.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "light",
+        "question": "He also investigated the thermal properties of __________ and the quantum theory of radiation, the basis of the laser, which laid the foundation of the photon theory of light.",
+        "similar_words": [
+            "infrared",
+            "ultraviolet"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "general theory",
+        "question": "In 1917, he applied the __________ __________ of relativity to model the structure of the universe.In 1933, while Einstein was visiting the United States, Adolf Hitler came to power.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "jewish background",
+        "question": "Because of his __________ __________, Einstein did not return to Germany.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "american citizen",
+        "question": "He settled in the United States and became an __________ __________ in 1940.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "d. roosevelt",
+        "question": "On the eve of World War II, he endorsed a letter to President Franklin __________ __________ alerting him to the potential German nuclear weapons program and recommending that the US begin similar research.",
+        "similar_words": [],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "idea",
+        "question": "Einstein supported the Allies, but generally denounced the __________ of nuclear weapons.",
+        "similar_words": [
+            "acculturation",
+            "belief",
+            "education",
+            "experience",
+            "food",
+            "goal",
+            "heresy",
+            "ignorance"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "death",
+        "question": "Einstein was affiliated with the Institute for Advanced Study in Princeton, New Jersey, until his __________ in 1955.",
+        "similar_words": [
+            "acceleration",
+            "avulsion",
+            "birth",
+            "break",
+            "conversion",
+            "damage",
+            "deceleration",
+            "decrease"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "originality",
+        "question": "His intellectual achievements and __________ have made the word \"Einstein\" synonymous with \"genius\".",
+        "similar_words": [
+            "aptitude",
+            "bilingualism",
+            "capacity",
+            "creativity",
+            "faculty",
+            "hand",
+            "intelligence",
+            "know-how"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "understanding",
+        "question": "Eugene Wigner compared him to his contemporaries, writing that \"Einstein's __________ was deeper even than Jancsi von Neumann's.",
+        "similar_words": [
+            "awareness",
+            "cognizance",
+            "incognizance",
+            "know",
+            "prevision"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "mind",
+        "question": "His __________ was both more penetrating and more original than von Neumann's.\"",
+        "similar_words": [
+            "ability",
+            "attitude",
+            "cognitive factor",
+            "content",
+            "episteme",
+            "equivalent",
+            "history",
+            "inability"
+        ],
+        "title": "Albert Einstein",
+        "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+    },
+    {
+        "answer": "biological neuron",
+        "question": "The connections of the __________ __________ are modeled as weights.",
+        "similar_words": [],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "weight reflects",
+        "question": "A positive __________ __________ an excitatory connection, while negative values mean inhibitory connections.",
+        "similar_words": [],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "weight",
+        "question": "All inputs are modified by a __________ and summed.",
+        "similar_words": [
+            "absorptivity",
+            "deflection",
+            "dissolubility",
+            "drippiness",
+            "elasticity",
+            "fugacity",
+            "heat content",
+            "imperceptibility"
+        ],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "activity",
+        "question": "This __________ is referred to as a linear combination.",
+        "similar_words": [
+            "acquiring",
+            "action",
+            "assumption",
+            "causing",
+            "communication",
+            "delivery",
+            "departure",
+            "derivation"
+        ],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "example",
+        "question": "For __________, an acceptable range of output is usually between 0 and 1, or it could be \u22121 and 1.",
+        "similar_words": [
+            "acquaintance",
+            "background",
+            "circumstance",
+            "datum",
+            "descriptor",
+            "evidence",
+            "fact",
+            "predictor"
+        ],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "modeling",
+        "question": "These artificial networks may be used for predictive __________, adaptive control and applications where they can be trained via a dataset.",
+        "similar_words": [
+            "bronze",
+            "bust",
+            "carving",
+            "marble",
+            "mobile",
+            "mold",
+            "relief",
+            "stabile"
+        ],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    },
+    {
+        "answer": "experience",
+        "question": "Self-learning resulting from __________ can occur within networks, which can derive conclusions from a complex and seemingly unrelated set of information.",
+        "similar_words": [
+            "enlightenment",
+            "eruditeness",
+            "foundation",
+            "physical education"
+        ],
+        "title": "Neural network",
+        "url": "https://en.wikipedia.org/wiki/Neural_network"
+    }
+]
