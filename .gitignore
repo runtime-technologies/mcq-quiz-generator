@@ -1,0 +1,6 @@
+.vscode
+
+env
+
+scraped_pages/*
+!scraped_pages/.gitkeep
