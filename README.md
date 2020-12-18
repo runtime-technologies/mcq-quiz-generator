@@ -21,7 +21,7 @@
 
 ## To Do
 
-[] Implement simple question generator
-[] Test output formats
-[] Test [MCQ Generator](https://github.com/KristiyanVachev/Question-Generation)
-[] Create script to automate setup
+- [ ] Implement simple question generator
+- [ ] Test output formats
+- [ ] Test [MCQ Generator](https://github.com/KristiyanVachev/Question-Generation)
+- [ ] Create script to automate setup
