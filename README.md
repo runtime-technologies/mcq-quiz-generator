@@ -1,7 +1,5 @@
 # MCQ Question Generator
 
----
-
 ## Prerequisites
 
 - Python 3.6 or greater
@@ -20,3 +18,9 @@
 
 - List out the question topics in `topics.txt` with each topic on a new line
 - Run ```python ./scripts/scraper.py```
+
+## To Do
+
+- [] Implement simple question generator
+- [] Test [MCQ Generator](https://github.com/KristiyanVachev/Question-Generation)
+- [] Create script to automate setup
