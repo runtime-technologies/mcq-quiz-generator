@@ -1,9 +1,8 @@
 import wikipedia
 
-def scrape_topics():
-	TOPICS_FILE = open('./topics.txt')
 
-	for topic in TOPICS_FILE:
+def scrape_topics(topic_list: dict):
+	for topic, filename in topic_list.items():
 		try:
 			# Get the Wiki page for the topic
 			page = wikipedia.page(topic)
@@ -14,17 +13,12 @@ def scrape_topics():
 
 		# Generate the topic name and create a file to store scraped data
 		# Converts from Neural networks to neural_networks
-		topic_name = topic.lower().replace(' ', '_').strip()
-		topic_file = open('./scraped_pages/' + topic_name +
+		topic_file = open('./scraped_pages/' + filename +
 						  '.txt', 'w', encoding='utf-8')
 
 		# Write complete page data to file. Excludes lists and tables
 		# Page can be stored as content or summary
-		topic_file.write(page.content)
+		topic_file.write(page.summary)
 
 		# Close the file
 		topic_file.close()
-
-	TOPICS_FILE.close()
-
-scrape_topics()
