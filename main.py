@@ -11,26 +11,25 @@ from scripts.mcq_generator import MCQ_Generator
 
 def generate_quiz():
     topic_list = get_topic_list()
-    scrape_topics(topic_list)
+    keyword_dict = scrape_topics(topic_list)
     # summarize_text(topic_list)
 
-    question_list = []
+    question_list = {}
 
-    for filename in topic_list.values():
-        topic_file = open('./scraped_pages/' + filename +
-                          '.txt', 'r', encoding='utf-8')
-        summary_file = open('./scraped_pages/' + filename +
-                            '_summarised.txt', 'r', encoding='utf-8')
+    for topic, filename in topic_list.items():
+        topic_file = open('./scraped_pages/' + filename + '.txt', 'r', encoding='utf-8') 
         topic_text = topic_file.read()
-        summary_text = summary_file.read()
 
-        generator = MCQ_Generator(topic_text, topic_text)
-        question_list += generator.get_MCQs()
+        print("Keywords:", topic)
+        generator = MCQ_Generator(topic_text, keyword_dict[filename])
+        print("Distractors:", topic)
+        generated_questions = generator.get_MCQs()
+        question_list[filename] = generated_questions
         topic_file.close()
-        summary_file.close()
-
-    for item in question_list:
-        print(item)
+        
+        print("Results:", topic)
+        result = open('./results/' + filename + '.json', 'w', encoding='utf-8')
+        result.write(str(generated_questions))
 
 
 if __name__ == '__main__':

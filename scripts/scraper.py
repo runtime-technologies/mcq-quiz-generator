@@ -1,8 +1,11 @@
 import wikipedia
+import re
 
 
 def scrape_topics(topic_list: dict):
+	keyword_list = {}
 	for topic, filename in topic_list.items():
+		print("Scraping:",topic)
 		try:
 			# Get the Wiki page for the topic
 			page = wikipedia.page(topic)
@@ -18,7 +21,10 @@ def scrape_topics(topic_list: dict):
 
 		# Write complete page data to file. Excludes lists and tables
 		# Page can be stored as content or summary
-		topic_file.write(page.summary)
-
+		output = re.sub(r'\=\=+.*\n?', '', page.content)
+		topic_file.write(output)
+		# print(dir(page))
 		# Close the file
+		keyword_list[filename] = page.links
 		topic_file.close()
+	return keyword_list

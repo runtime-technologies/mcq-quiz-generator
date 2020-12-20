@@ -6,3 +6,6 @@ scraped_pages/*
 !scraped_pages/.gitkeep
 
 questions.txt
+*.pyc
+scripts/.DS_Store
+.DS_Store

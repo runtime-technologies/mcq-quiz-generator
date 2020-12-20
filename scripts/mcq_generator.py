@@ -3,15 +3,15 @@ from scripts.text_processing import get_mapped_sentences
 import requests
 import re
 import random
-from pywsd.similarity import max_similarity
-from pywsd.lesk import adapted_lesk, simple_lesk, cosine_lesk
+# from pywsd.similarity import max_similarity
+# from pywsd.lesk import adapted_lesk
 from nltk.corpus import wordnet as wn
 
 
 class MCQ_Generator:
-    def __init__(self, text, summary):
+    def __init__(self, text, keywords):
         self.text = text
-        self.summary = summary
+        self.keywords = keywords
 
     def get_wordsense(self, sent, word):
         word = word.lower()
@@ -78,6 +78,7 @@ class MCQ_Generator:
         for keyword in keyword_sentence_mapping:
             wordsense = self.get_wordsense(
                 keyword_sentence_mapping[keyword][0], keyword)
+
             if wordsense:
                 distractors = self.get_distractors_wordnet(wordsense, keyword)
                 if len(distractors) == 0:
@@ -93,19 +94,13 @@ class MCQ_Generator:
         return key_distractor_list
 
     def get_MCQs(self):
-        print('\n#####\n')
-        print(self.summary)
-        print('\n#####\n')
-
-        keyword_sentence_mapping = get_mapped_sentences(
-            self.text, self.summary)
+        keyword_sentence_mapping = get_mapped_sentences(self.text)
         key_distractor_list = self.get_distractors(keyword_sentence_mapping)
-
+        
         question_list = []
 
         for each in key_distractor_list:
             mcq = {}
-
             question = keyword_sentence_mapping[each][0]
             pattern = re.compile(each, re.IGNORECASE)
             question = pattern.sub(" _______ ", question)

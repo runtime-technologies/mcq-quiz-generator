@@ -51,14 +51,11 @@ def get_nouns_multipartite(text):
 
 def generate_keywords(text, summarised_text):
     keywords = get_nouns_multipartite(text)
-
-    filtered_keys = []
-    for word in keywords:
-        print('\n#####\n')
-        print(summarised_text)
-        print('\n#####\n')
-        if word.lower() in summarised_text.lower():
-            filtered_keys.append(word)
+    filtered_keys = keywords
+    # filtered_keys = []
+    # for word in keywords:
+    #     if word.lower() in summarised_text.lower():
+    #         filtered_keys.append(word)
 
     return filtered_keys
 
@@ -90,10 +87,10 @@ def get_sentences_for_keyword(keywords, sentences):
     return keyword_sentences
 
 
-def get_mapped_sentences(text, summarised_text):
-    filtered_keys = generate_keywords(text, summarize_text)
-    sentences = tokenize_sentences(summarised_text)
-    keyword_sentence_mapping = get_sentences_for_keyword(
-        filtered_keys, sentences)
+def get_mapped_sentences(text):
+    filtered_keys = generate_keywords(text, "")
+    # filtered_keys = keywords
+    sentences = tokenize_sentences(text)
+    keyword_sentence_mapping = get_sentences_for_keyword(filtered_keys, sentences)
 
     return keyword_sentence_mapping
