@@ -1,8 +1,12 @@
 .vscode
+*.pyc
+scripts/.DS_Store
+.DS_Store
 
 env
 
 scraped_pages/*
 !scraped_pages/.gitkeep
 
-questions.txt
+results/*
+!results/.gitkeep

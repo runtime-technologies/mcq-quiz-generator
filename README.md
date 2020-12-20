@@ -19,7 +19,6 @@
 - List out the question topics in `topics.txt` with each topic on a new line
 - Run ```python ./scripts/scraper.py```
 
-
 ## Running the temp generator
 
 - Run ```python driver.py```
@@ -31,3 +30,8 @@
 - [ ] Test output formats
 - [ ] Test [MCQ Generator](https://github.com/KristiyanVachev/Question-Generation)
 - [ ] Create script to automate setup
+
+## References
+
+- [BERT Wordnet Conceptnet](https://towardsdatascience.com/practical-ai-automatically-generate-multiple-choice-questions-mcqs-from-any-content-with-bert-2140d53a9bf5)
+- []
