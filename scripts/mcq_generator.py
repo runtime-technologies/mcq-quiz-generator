@@ -3,15 +3,15 @@ from scripts.text_processing import get_mapped_sentences
 import requests
 import re
 import random
-# from pywsd.similarity import max_similarity
-# from pywsd.lesk import adapted_lesk
+from pywsd.similarity import max_similarity
+from pywsd.lesk import adapted_lesk, cosine_lesk, simple_lesk
 from nltk.corpus import wordnet as wn
 
 
 class MCQ_Generator:
-    def __init__(self, text, keywords):
+    def __init__(self, text, summary):
         self.text = text
-        self.keywords = keywords
+        self.summary = summary
 
     def get_wordsense(self, sent, word):
         word = word.lower()
@@ -40,7 +40,6 @@ class MCQ_Generator:
             return distractors
         for item in hypernym[0].hyponyms():
             name = item.lemmas()[0].name()
-            #print ("name ",name, " word",orig_word)
             if name == orig_word:
                 continue
             name = name.replace("_", " ")
@@ -94,9 +93,10 @@ class MCQ_Generator:
         return key_distractor_list
 
     def get_MCQs(self):
-        keyword_sentence_mapping = get_mapped_sentences(self.text)
+        keyword_sentence_mapping = get_mapped_sentences(
+            self.text, self.summary)
         key_distractor_list = self.get_distractors(keyword_sentence_mapping)
-        
+
         question_list = []
 
         for each in key_distractor_list:
@@ -105,6 +105,7 @@ class MCQ_Generator:
             pattern = re.compile(each, re.IGNORECASE)
             question = pattern.sub(" _______ ", question)
             mcq['question'] = question
+            mcq['answer'] = each
 
             choices = [each.capitalize()] + key_distractor_list[each]
             options = choices[:4]
