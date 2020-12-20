@@ -93,6 +93,10 @@ class MCQ_Generator:
         return key_distractor_list
 
     def get_MCQs(self):
+        print('\n#####\n')
+        print(self.summary)
+        print('\n#####\n')
+
         keyword_sentence_mapping = get_mapped_sentences(
             self.text, self.summary)
         key_distractor_list = self.get_distractors(keyword_sentence_mapping)

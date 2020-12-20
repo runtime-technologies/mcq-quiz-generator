@@ -9,9 +9,9 @@ import string
 def summarize_text(topic_list):
     model = Summarizer()
     for filename in topic_list.values():
-        topic_file = open('./scraped_page/' + filename +
-                          '.txt', 'e', encoding='utf-8')
-        summary_file = open('./scraped_page/' + filename +
+        topic_file = open('./scraped_pages/' + filename +
+                          '.txt', 'r', encoding='utf-8')
+        summary_file = open('./scraped_pages/' + filename +
                             '_summarised.txt', 'w', encoding='utf-8')
         text = topic_file.read()
         result = model(text, min_length=60, max_length=500, ratio=0.4)
@@ -53,9 +53,12 @@ def generate_keywords(text, summarised_text):
     keywords = get_nouns_multipartite(text)
 
     filtered_keys = []
-    for keyword in keywords:
-        if keyword.lower() in summarised_text.lower():
-            filtered_keys.append(keyword)
+    for word in keywords:
+        print('\n#####\n')
+        print(summarised_text)
+        print('\n#####\n')
+        if word.lower() in summarised_text.lower():
+            filtered_keys.append(word)
 
     return filtered_keys
 
