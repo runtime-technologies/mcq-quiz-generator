@@ -28,8 +28,7 @@ def get_nouns_multipartite(text):
     extractor.load_document(input=text)
 
     # Ignore punctuations and stopwords
-    pos = {'PROPN'}
-    #pos = {'VERB', 'ADJ', 'NOUN'}
+    pos = {'PROPN', 'VERB', 'ADJ', 'NOUN'}
 
     stoplist = list(string.punctuation)
     stoplist += ['-lrb-', '-rrb-', '-lcb-', '-rcb-', '-lsb-', '-rsb-']

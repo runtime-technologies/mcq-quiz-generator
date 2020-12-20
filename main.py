@@ -3,16 +3,16 @@ from scripts.scraper import scrape_topics
 from scripts.text_processing import summarize_text
 from scripts.mcq_generator import MCQ_Generator
 
-# import nltk
+import nltk
 
-# nltk.download('stopwords')
-# nltk.download('popular')
+nltk.download('stopwords')
+nltk.download('popular')
 
 
 def generate_quiz():
     topic_list = get_topic_list()
-    keyword_dict = scrape_topics(topic_list)
-    # summarize_text(topic_list)
+    scrape_topics(topic_list)
+    summarize_text(topic_list)
 
     question_list = {}
 
@@ -25,7 +25,7 @@ def generate_quiz():
         summary_text = summary_file.read()
 
         print('Generating questions for:', topic)
-        generator = MCQ_Generator(topic_text, topic_text)
+        generator = MCQ_Generator(topic_text, summary_text)
         generated_questions = generator.get_MCQs()
         question_list[topic] = generated_questions
 
