@@ -6,3 +6,5 @@ scraped_pages/*
 !scraped_pages/.gitkeep
 
 questions.txt
+
+scripts/data
