@@ -22,24 +22,24 @@ def generate_quiz():
                           '.txt', 'r', encoding='utf-8')
         topic_text = topic_file.read()
 
-        # summary_file = open('./scraped_pages/' + filename + '_summarised.txt', 'r', encoding='utf-8')
-        # summary_text = summary_file.read()
+        summary_file = open('./scraped_pages/' + filename + '_summarised.txt', 'r', encoding='utf-8')
+        summary_text = summary_file.read()
 
         print('Generating MCQ questions for:', topic)
-        # mcq_generator = MCQ_Generator(topic_text, summary_text)
-        # mcq_generated_questions = mcq_generator.get_MCQs()
+        mcq_generator = MCQ_Generator(topic_text, summary_text)
+        mcq_generated_questions = mcq_generator.get_MCQs()
         
         print('Generating WH questions for:', topic)
         whq_generator = WHQ_Generator(topic_text)
         whq_generated_questions = whq_generator.parse(topic_text)
 
-        # mcq_question_list[topic] = mcq_generated_questions
+        mcq_question_list[topic] = mcq_generated_questions
         whq_question_list[topic] = whq_generated_questions
 
         topic_file.close()
 
         print("Storing questions for:", topic)
-        # write_questions_to_file(filename, mcq_generated_questions, 'mcq')
+        write_questions_to_file(filename, mcq_generated_questions, 'mcq')
         write_questions_to_file(filename, whq_generated_questions, 'whq')
 
 
