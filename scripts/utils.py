@@ -19,6 +19,6 @@ def write_questions_to_file(filename: str, questions: list, question_type: str):
             result.write('O: ' + options + '\n\n\n')
     else:
         for question in questions:
-            result.write('Q: ' + question)
+            result.write('Q: ' + question + '\n')
 
     result.close()
