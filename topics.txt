@@ -1,2 +1,1 @@
-Albert Einstein
 Neural networks

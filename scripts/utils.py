@@ -7,9 +7,8 @@ def get_topic_list():
 
     return topics_list
 
-
-def write_questions_to_file(filename: str, questions: list):
-    result = open('./results/' + filename +
+def write_questions_to_file(filename: str, questions: list, question_type: str):
+    result = open('./results/' + filename + '_' + question_type +
                   '_questions.txt', 'w', encoding='utf-8')
 
     for question in questions:

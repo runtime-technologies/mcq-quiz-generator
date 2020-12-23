@@ -1,7 +1,6 @@
 import wikipedia
 import re
 
-
 def scrape_topics(topic_list: dict):
     for topic, filename in topic_list.items():
         print("Scraping:", topic)
