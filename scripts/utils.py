@@ -10,11 +10,15 @@ def get_topic_list():
 def write_questions_to_file(filename: str, questions: list, question_type: str):
     result = open('./results/' + filename + '_' + question_type +
                   '_questions.txt', 'w', encoding='utf-8')
-
-    for question in questions:
-        result.write('Q: ' + question['question'] + '\n')
-        result.write('A: ' + question['answer'] + '\n')
-        options = ', '.join(map(str, question['options']))
-        result.write('O: ' + options + '\n\n\n')
+    
+    if(question_type == 'mcq'):
+        for question in questions:
+            result.write('Q: ' + question['question'] + '\n')
+            result.write('A: ' + question['answer'] + '\n')
+            options = ', '.join(map(str, question['options']))
+            result.write('O: ' + options + '\n\n\n')
+    else:
+        for question in questions:
+            result.write('Q: ' + question)
 
     result.close()
