@@ -1,1 +1,1 @@
-Neural networks
+Artificial Neural Network

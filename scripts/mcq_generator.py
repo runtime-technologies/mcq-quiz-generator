@@ -23,8 +23,7 @@ class MCQ_Generator:
         if synsets:
             wup = max_similarity(sent, word, 'wup', pos='n')
             adapted_lesk_output = adapted_lesk(sent, word, pos='n')
-            lowest_index = min(synsets.index(
-                wup), synsets.index(adapted_lesk_output))
+            lowest_index = min(synsets.index(wup), synsets.index(adapted_lesk_output))
             return synsets[lowest_index]
         else:
             return None

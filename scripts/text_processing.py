@@ -8,7 +8,8 @@ import string
 
 def summarize_text(topic_list):
     model = Summarizer()
-    for filename in topic_list.values():
+    for topic, filename in topic_list.items():
+        print("Scraping:", topic)
         topic_file = open('./scraped_pages/' + filename +
                           '.txt', 'r', encoding='utf-8')
         summary_file = open('./scraped_pages/' + filename +
@@ -28,7 +29,8 @@ def get_nouns_multipartite(text):
     extractor.load_document(input=text)
 
     # Ignore punctuations and stopwords
-    pos = {'PROPN', 'VERB', 'ADJ', 'NOUN'}
+    pos = {'PROPN'}
+    # pos = {'PROPN', 'NOUN'}
 
     stoplist = list(string.punctuation)
     stoplist += ['-lrb-', '-rrb-', '-lcb-', '-rcb-', '-lsb-', '-rsb-']
